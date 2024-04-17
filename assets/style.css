@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.person {
+  /* display: flex; */
+  margin: auto;
+  padding: 1em;
+  border-radius: 1rem;
+  width: 20rem;
+  background-color: hsl(0, 0%, 26%);
+  text-align: center;
+}
+
+.person-pfp {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.person-full-name {
+  color: white;
+  margin: 10px;
+}
+
+.person-location {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.person-quote {
+  margin-bottom: 0.2rem;
+  color: white;
+}
+
+.person-social-media {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 1.5rem;
+}
+
+.button {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 10px 5px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+
+.button:hover,
+.button:active {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
